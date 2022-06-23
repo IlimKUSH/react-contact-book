@@ -1,13 +1,146 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+#root {
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  padding: 20px;
+  border: 3px solid #000;
+  width: 100%;
+  max-width: 300px;
+  height: 500px;
+}
+body {
+  padding: 30px;
+  background: #e7f6ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+}
+.info__content {
+  margin-top: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.info__content > input {
+  border: 2px solid rgb(108, 144, 223);
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.2s;
+}
+.info__content > input:hover {
+  background-color: rgb(237, 241, 248);
+  border: 2px solid rgb(91, 140, 247);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header__btn {
+  padding: 5px;
+  background: #e7f6ff;
+  border-radius: 5px;
+  border: 2px solid #7ac1ed;
+  transition: 0.2s;
+}
+.header__btn:hover {
+  background-color: #7ac1ed;
+  color: #fff;
+}
+button {
+  cursor: pointer;
+}
+.edit {
+  display: flex;
+  flex-direction: column;
+}
+.edit > input {
+  margin-top: 10px;
+}
+.edit > button {
+  margin-top: 10px;
+}
+.info__content > button {
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 3px;
+  border: 2px solid #039bf9;
+  transition: 0.2s;
+  background-color: inherit;
+  color: #039bf9;
+}
+.info__content > button:hover {
+  background-color: #74c4f6;
+  color: #fff;
+}
+.card__content {
+  margin-top: 15px;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+}
+.margin {
+  margin-left: 5px;
+}
+.card__btn-delete {
+  border-radius: 3px;
+  padding: 2px;
+  border: 1px solid rgb(255, 1, 1);
+  color: #fff;
+  background-color: rgb(230, 65, 65);
+  margin-top: 5px;
+}
+.card__btn-edit {
+  border-radius: 3px;
+  padding: 2px;
+  border: 1px solid rgb(32, 212, 59);
+  color: #fff;
+  background-color: rgb(32, 212, 59);
+}
+.card__btn-details {
+  border-radius: 3px;
+  padding: 2px;
+  border: 1px solid rgb(12, 112, 193);
+  color: #fff;
+  background-color: rgb(12, 112, 193);
+}
+.list {
+  margin-top: 20px;
+  overflow-y: scroll;
+  height: 400px;
+}
+.edit > input {
+  padding: 4px;
+  border-radius: 5px;
+  border: 2px solid #039bf9;
+}
+.edit > button {
+  padding: 4px;
+  border-radius: 5px;
+  border: 2px solid #039bf9;
+  background-color: #74c4f6;
+  color: #fff;
+  transition: 0.2s;
+}
+.edit > button:hover {
+  background-color: #1a9eef;
 }
